@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./css/css-reset.css" type="text/css">  
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">  
+    <title>Weather and News</title>     
+  </head> 
+  <body>
+    <div class="main-container">
+      <header></header>  
+      <div class="main-content">
+        <div class="weather-content content-box">
+          <div class="weather-input">     
+            <form id='city-form'>
+              <h3>City or ZIP Code and Country</h3>
+              <input type="text" id="city-input" placeholder="Hamburg or 22299 Germany">
+              <button id="city-submit" type="submit" value="submit">Show me the weather!</button> 
+            </form>
+          </div>
+          <div class="weather-results">
+          </div>     
+        </div>     
+        <div class="news-content content-box">
+          <div class="news-input">
+            <h3>YOUR NEWS | powered by NewsAPI.org</h3>    
+            <button type="submit" onclick="getNews()">Show me the news!</button>
+          </div>    
+          <div class="news-results">    
+            <ul id="news">
+            </ul>
+          </div>
+        </div>     
+      </div>
+      <footer>
+        <p>Laszlo Suslecz | 2017</p>  
+      </footer>
+    </div> 
+    <script src="app.js"></script>
+  </body>    
+</html>

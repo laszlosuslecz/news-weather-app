@@ -1,0 +1,128 @@
+$font-stack: 'Raleway', sans-serif;
+$font-stack-basic: 'Roboto', sans-serif;
+$color-primary: #696969;
+$color-secondary: white;
+$color-weather: lightskyblue;
+$color-footer: darkblue;
+$border-submit: 2px solid $color-weather;
+$border-content: 1px solid darkblue;
+$border-radius: 5px;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  font: 18px $font-stack-basic;    
+}
+
+body {
+  width: 95%;
+  margin: 0 auto;    
+}
+
+.main-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;    
+}
+
+.content-box {
+  min-height: 600px;    
+}
+
+.weather-content {
+  width: 30%;    
+  flex: 1, 1, 50%; 
+  padding: 10px; 
+}
+
+.weather-input {
+  border-bottom: $border-content;    
+  
+  h3 { 
+    text-align: center;    
+    margin: 10px auto;  
+  }    
+  
+  input {
+    display: block;
+    margin: 10px auto;  
+    width: 40%;
+    height: 3rem;
+    border: $border-submit;
+    border-radius: $border-radius;
+    text-align: center;
+    background-color: $color-secondary;  
+  }
+    
+  button {
+    display: block;  
+    margin: 10px auto;
+    height: 2.5rem; 
+    border-radius: $border-radius;
+    background-color: $color-primary;
+    color: $color-secondary;  
+  }    
+}
+
+.weather-results {
+  p {
+    text-align: center;
+    line-height: 2;  
+    font: 60px $font-stack;
+    color: $color-weather;  
+    padding-top: 20px;   
+  }    
+}
+
+.news-content {
+  width: 60%;    
+  flex: 1, 1, 50%;    
+  padding: 10px;
+  border-left: $border-content;    
+}
+
+.news-input {
+  h3 {
+    text-align: center;    
+    margin: 10px auto;       
+  }   
+  button {
+    display: block;  
+    margin: 10px auto;
+    height: 2.5rem; 
+    border-radius: $border-radius;
+    background-color: $color-primary;
+    color: $color-secondary;        
+  }
+}
+
+.news-results {
+  li {
+    margin-bottom: 10px;      
+  }
+  h4{
+    text-align: center;
+    margin-bottom: 3px;
+    background-color: beige;  
+  }   
+  p{
+    font-size: 12px;
+    text-align: right;  
+  }
+  a{
+    font-size: 12px;
+    display: block;  
+    text-align: center;
+  }
+}
+
+footer {
+  p{
+    font: 12px $font-stack-basic;
+    color: $color-footer;
+    text-align: right;  
+  }    
+}
